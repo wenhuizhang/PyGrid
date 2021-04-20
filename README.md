@@ -14,6 +14,22 @@ PyGrid platform is composed by three different components.
 - **Domain** - A Flask-based application used to store private data and models for federated learning, as well as to issue instructions to various PyGrid Workers.
 - **Worker** - An emphemeral instance, managed by a PyGrid Domain, that is used to compute data.
 
+
+
+## how to use
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+\\ add conda PATH to PATH
+conda config --set auto_activate_base false
+conda create -n wenhui_syft_env python=3.8
+conda activate wenhui_syft_env
+curl -fSsL https://get.docker.com -o get-docker.sh
+docker-compose up
+```
+
+
+
 ## Use Cases
 
 ### Federated Learning
